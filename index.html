@@ -19,31 +19,37 @@
             <div class="text">
               <h1>Explore</h1>
               <p>Welcome to travel and explore, your ultimate guide to exploring the globe</p>
-              <button id="book">Download App</button>  
+              <button 
+              id="book" 
+              >Download App</button>
+              <button commandfor="planForm" command="show-modal">book now</button>  
             </div>
         </div> 
         <div class="image">
             <img src="image2.avif" alt="no image available">
         </div>
     </section>
-    <section class="features2">
-        <h6>PLAN YOUR TRIP</h6>
-        <h3>Make your booking early!</h3>
-        <div class="message" style="display:none;"></div>
-        <form class="form">
-            <label for="name"></label>
-            <input type="text" class="name" placeholder="Name......">
-            <label for="email"></label>
-            <input type="email" class="email" placeholder="Email......">
-            <label for="toursite"></label>
-            <input type="text" class="tour" placeholder="Tourist Site......">
-            <button type="submit">Book Now</button>
-        </form>
-    </section>
+  <dialog id="planForm">
+      <section class="features2">
+         <h6>PLAN YOUR TRIP</h6>
+         <h3>Make your booking early!</h3>
+         <div class="message" style="display:none;"></div>
+           <form class="form">
+             <label for="name"></label>
+             <input type="text" class="name" placeholder="Name......">
+             <label for="email"></label>
+             <input type="email" class="email" placeholder="Email......">
+             <label for="toursite"></label>
+             <input type="text" class="tour" placeholder="Tourist Site......">
+             <button type="submit">Book Now</button>
+             <button onclick="document.getElementById('planForm').close()">❎</button>
+         </form>
+      </section>
+  </dialog>
     <footer class="footer">
         <h3>Experience more together</h3>
         <p>Business Computing-WAD Exam</p>
     </footer>
 </body>
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
 </html>
